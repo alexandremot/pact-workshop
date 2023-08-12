@@ -22,7 +22,7 @@ public class ProductServiceClientTest {
         WireMockServer server = new WireMockServer();
         server.start();
                 stubFor(
-                get(urlPathEqualTo("/products/10"))
+                get(urlPathEqualTo("/product/10"))
                         .willReturn(
                                 aResponse()
                                         .withStatus(200)

@@ -29,7 +29,7 @@ public class ProductServiceClientPactTest {
         return builder
                 .given("product with id 10 exists")
                 .uponReceiving("get product with id 10")
-                .path("/products/10")
+                .path("/product/10")
                 .willRespondWith()
                 .status(200)
                 .body(
