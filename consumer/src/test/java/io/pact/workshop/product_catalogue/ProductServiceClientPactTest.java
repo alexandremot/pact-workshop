@@ -24,7 +24,7 @@ public class ProductServiceClientPactTest {
     @Autowired
     private ProductServiceClient productServiceClient;
 
-    @Pact(consumer = "ProductCatalogue")
+    @Pact(consumer = "ProductCatalogue", provider = "ProductService")
     public RequestResponsePact singleProduct(PactDslWithProvider builder){
         return builder
                 .given("product with id 10 exists")
