@@ -40,13 +40,8 @@ public class ProductServiceClientTest {
         );
 
         productServiceClient.setBaseUrl(server.baseUrl());
-
         Product product = productServiceClient.getProductById(10);
-
         Product objProduct = new Product(10l, "28 Degrees", "CREDIT_CARD", "v1");
-
         assertThat(product).isEqualTo(objProduct);
-
     }
-
 }
